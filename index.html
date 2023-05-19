@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Login </title>
+    <style>
+    body{
+      margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url(iq.jpg) fixed center;
+    align-items: center;
+    background-size: cover;
+      font-family: "Segoe UI", sans-serif;
+  }
+  .login-box{
+      width: 320px;
+      height: 590px;
+      background: rgba(48, 48, 48, 0.384);
+      color: rgb(255, 255, 255);
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      box-sizing: border-box;
+      padding: 70px 30px;
+  }
+  h1{
+      transform: translate(0%,-50%);
+      margin: 0;
+      font-size: 40px;
+      border-bottom: 5px solid #ff0055;
+      width: 160px;
+      margin-bottom: 10px;
+      
+      padding: 13px 0;
+      padding: 0 0 12px;
+      text-align: center;
+      font-size: 45px;
+           
+  }
+  
+  .login-box p{
+      margin: 10;
+      padding: 0;
+      font-weight: bold;
+      font-size: 17px;
+      text-shadow: 0 0 5px  #ffffff,
+                0 0 10px  #ffffff,
+                0 0 20px  #000000,
+                0 0 30px  #000000;
+              
+  }
+  ::placeholder {
+      color: #ff00557a;
+      opacity: 1;
+      
+    }
+  .login-box input{
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .login-box input[type="text"], input[type="password"]
+  {
+      border: none;
+      border-bottom: 1px solid #ff0055;
+      background: transparent;
+      outline: none;
+      height: 40px;
+      color: #ffffff;
+      font-size: 14px;
+  }
+  .login_box button{
+    margin: 10px 0 30px 0;
+    height: 45px;
+    width: 255px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor:pointer;
+    font-weight: 400;
+    background: transparent;
+    border-radius: 30px;
+      border: 1px solid #ffffff;
+      transition: .5s;	
+     
+  }
+  .login-box button:hover
+  {
+      cursor: pointer;
+      background: none;
+      color: #ff0055;
+      border: 1px solid #ff0055;
+      box-shadow: 0 0 25px  #ff0055;
+      text-shadow: 0 0 5px  #ff0055,
+                0 0 10px  #ff0055,
+                0 0 20px  #ff0055,
+                0 0 30px  #ff0055;
+  }
+              
+  .login-box a{
+      
+      font-size: 14px;
+      color: rgb(255, 255, 255)
+  }
+  .login-box a:hover
+  {
+      color: #ff0055;
+      transition: 0.7s;
+  }
+  
+  .login_box #username_error,
+  .login_box #pass_error{
+      margin-top:0px;
+      margin-bottom:30px;
+    width:345px;
+    font-size:12px;
+    color: #ff0000;
+    background:transparent;
+    text-align: left;
+    padding: 5px 8px;
+    display: none;
+  
+  }</style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="login-box">
+
+        <h1>Login</h1>
+        <form class="login_box" method="POST" name="form" onsubmit="return validated()">
+            <p>Username</p>
+            <input type="text" name="ad_name" id="user" placeholder="Enter Username" required>
+            <div id="username_error">Please fill up valid username.</div>
+            <p>Password</p>
+            <input type="password" name="password" id="pass" placeholder="Enter Password" required>
+            <div id="pass_error">Please fill up your password.</div>
+            <button type="submit" name="submit" value="Login">Login</button>
+
+            <a href="#">Forgot Password?</a>
+            <br>
+            <br>
+            <a>Home</a>
+        </form>
+
+    </div>
+    <script src="valid.js"></script>
+
+    <script type="text/javascript" src="preloader.js"></script>
+
+</body>
+
+</html>
